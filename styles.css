@@ -19,10 +19,22 @@ body {
     margin-bottom: 2rem;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #333;
     margin-bottom: 1rem;
     text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+    
+    
+}
+
+h3 {
+    color: #3498db;;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 150%;
+    font-style: oblique;
 }
 
 /* Header and Navigation */
@@ -141,7 +153,7 @@ nav {
     background: linear-gradient(135deg, #3498db, #8e44ad);
     color: #fff;
     text-align: center;
-    padding: 6rem 2rem;
+    padding: 3rem 1rem;
     border-radius: 0;
 }
 
@@ -151,7 +163,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     color: #fff;
 }
@@ -179,11 +191,48 @@ nav {
 }
 
 /* About Me Section */
+section#sobre-mi p {
+    text-align: justify;
+}
+
 #sobre-mi p {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
 }
+
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: flex-start; /* Alineación de elementos */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.foto-perfil {
+    width: 25%;
+    height: 25%;
+    border-radius:10%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    border: 2px solid #ccc; /* Agrega un borde opcional */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    margin-top: 3%;
+}
+
+.sobre-mi-texto {
+    max-width: 800px; /* Limita el tamaño del bloque de texto */
+    flex: 1; /* Deja que el texto ocupe el resto del espacio */
+}
+
+@media (max-width: 768px) {
+    .sobre-mi-contenedor {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos cuando están en columna */
+    }
+
+}
+
+
+
 
 /* Experience Section */
 .experiencia-item {
