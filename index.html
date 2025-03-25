@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Jesús López Galiano</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <a href="#" class="logo">JL</a>
+            <button class="nav-toggle" aria-label="Abrir navegación">
+                <span class="hamburger"></span>
+                <span class="close-icon"><i class="fas fa-times"></i></span>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h1>Jesús López Galiano</h1>
-            <h2>Desarrollador Web Full Stack</h2>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Jesús López Galiano</h1>
+                <h2>Desarrollador Web Full Stack</h2>
+                <p>Apasionado por la tecnología y la creación de soluciones innovadoras.</p>
+                <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+            </div>
         </section>
 
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="section">
             <h2>Sobre mí</h2>
-            <p>Soy un desarrollador web full stack con formación en Desarrollo de Aplicaciones Web y Sistemas de Telecomunicaciones e Informáticos. Mi experiencia abarca desde el desarrollo backend y frontend hasta el diseño de infraestructuras de fibra óptica, complementada con habilidades en atención al cliente y gestión de proyectos.</p>
+            <p>Soy un desarrollador web full stack con formación en Desarrollo de Aplicaciones Web y Sistemas de Telecomunicaciones e Informáticos. Mi experiencia abarca desde el desarrollo backend y frontend hasta el diseño de infraestructuras de fibra óptica. Me encanta aprender cosas nuevas y siempre estoy buscando nuevos retos.</p>
         </section>
 
-        <section id="experiencia">
+        <section id="experiencia" class="section">
             <h2>Experiencia Profesional</h2>
             <div class="experiencia-item">
                 <h3>Desarrollador Web Backend y Frontend - Prácticas</h3>
-                <p>BRGI - Villacarrillo, Jaén (09/2024 - 12/2024)</p>
+                <p class="lugar">BRGI - Villacarrillo, Jaén (09/2024 - 12/2024)</p>
                 <ul>
                     <li>Mantenimiento y desarrollo de CRM para empresas de telefonía móvil.</li>
                     <li>Resolución de incidencias y mejora de funcionalidades usando PHP, Symfony, JavaScript y SQL.</li>
@@ -44,32 +55,16 @@
             </div>
             <div class="experiencia-item">
                 <h3>Diseñador de infraestructuras de Fibra Óptica</h3>
-                <p>Cotronic - INYGES 2016, Albolote, Granada (03/2019 - 05/2020)</p>
+                <p class="lugar">Cotronic - INYGES 2016, Albolote, Granada (03/2019 - 05/2020)</p>
                 <ul>
                     <li>Análisis y diseño de infraestructura para fibra óptica.</li>
                     <li>Uso de software especializado de Telefónica (Planex, Sgipe, Visord).</li>
                     <li>Certificaciones post-obra.</li>
                 </ul>
             </div>
-            <div class="experiencia-item">
-                <h3>Envasador de Aceite de Oliva</h3>
-                <p>Arévalo del Moral - Potosí 10 S.A, Orcera, Jaén (08/2020 - 03/2021)</p>
-                <ul>
-                    <li>Gestión de pedidos y envasado de aceite en diversos formatos.</li>
-                    <li>Manejo de maquinaria y atención al cliente.</li>
-                </ul>
-            </div>
-            <div class="experiencia-item">
-                <h3>Camarero y Ayudante de Cocina</h3>
-                <p>Bar Pizzería Ché, Orcera, Jaén (06/2016 - Actualidad)</p>
-                <ul>
-                    <li>Servicio de barra y mesa, gestión de inventario.</li>
-                    <li>Cierre de caja y preparación de alimentos.</li>
-                </ul>
-            </div>
         </section>
 
-        <section id="formacion">
+        <section id="formacion" class="section">
             <h2>Formación Académica</h2>
             <div class="formacion-item">
                 <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
@@ -79,36 +74,38 @@
                 <h3>Técnico Superior en Sistemas de Telecomunicaciones e Informáticos</h3>
                 <p>I.E.S. Virgen de las Nieves, Granada (2019)</p>
             </div>
-            <div class="formacion-item">
-                <h3>Bachillerato Científico-Tecnológico</h3>
-                <p>I.E.S. Doctor Francisco Marín, Siles, Jaén (2017)</p>
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-lista">
+                <span>PHP</span>
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Symfony</span>
+                <span>Git</span>
+                <span>Visual Studio Code</span>
             </div>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li>Lenguajes: PHP, Java, JavaScript, Python, SQL</li>
-                <li>Frameworks: Symfony</li>
-                <li>Sistemas Operativos: Windows, Linux</li>
-                <li>Herramientas: Git, Visual Studio Code, Eclipse, Cisco Packet Tracer, Putty, FileZilla, Android Studio</li>
-                <li>Redes y servidores: Creación y mantenimiento de servidores, gestión de redes</li>
-            </ul>
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="section">
+            <h2>Proyectos</h2>
+          
+            <div class="proyecto-item">
+                <h3>Tienda Web "Carnicería Galiano"</h3>
+                <img src="./imagenes/imagen1.png" alt="Carnicería Galiano" class="proyecto-imagen">
+                <p>Desarrollo de una tienda web completa para el negocio local "Carnicería Galiano", incluyendo tienda online, gestión de productos y pedidos.</p>
+                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL (o la base de datos que hayas utilizado).</p>
+            </div>
         </section>
 
-        <section id="idiomas">
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Español: Nativo</li>
-                <li>Inglés: A2 (Básico)</li>
-                <li>Francés: A2 (Básico)</li>
-            </ul>
-        </section>
-
-        <section id="contacto">
+        <section id="contacto" class="section">
             <h2>Contacto</h2>
-            <p>Calle Polígonos, 9. 23370 Orcera (Jaén)</p>
-            <p>Teléfono: 620573098</p>
+            <p class="contacto-info">Calle Polígonos, 9. 23370 Orcera (Jaén)</p>
+            <p class="contacto-info">Teléfono: 620573098</p>
             <p>Email: t1s7lopezm@gmail.com</p>
             <form id="contactForm">
                 <input type="text" placeholder="Nombre" required>
@@ -120,6 +117,11 @@
     </main>
 
     <footer>
+        <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
         <p>&copy; 2025 Jesús López Galiano. Todos los derechos reservados.</p>
     </footer>
 
