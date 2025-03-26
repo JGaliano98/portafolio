@@ -486,12 +486,33 @@ footer {
     color: #555;
 }
 
-/* Estilos para la imagen del proyecto */
-.proyecto-imagen {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+
+/* Estilo para el contenedor de los proyectos */
+.proyecto-contenedor {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin-bottom: 20px; /* Separación entre las imágenes */
+    height: 100%; /* Asegura que el contenedor tenga altura para centrar */
 }
+
+/* Estilo para las imágenes de los proyectos */
+.proyecto-imagen {
+    width: 100%; /* O usa un valor específico como '300px' */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 500px; /* Tamaño máximo de la imagen */
+    border-radius: 8px; /* Si quieres bordes redondeados */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+/* Si quieres que las imágenes sean más grandes en pantallas grandes */
+@media (min-width: 768px) {
+    .proyecto-imagen {
+        width: 80%; /* Ajusta el tamaño de la imagen en pantallas grandes */
+        max-width: 700px; /* Tamaño máximo de la imagen */
+    }
+}
+
+
 
 }
