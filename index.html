@@ -6,6 +6,7 @@
     <title>Portafolio de Jesús López Galiano</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -31,8 +32,7 @@
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Jesús López Galiano</h1>
-                <h2>Desarrollador Web Full Stack</h2>
-                <p>Apasionado por la tecnología y la creación de soluciones innovadoras.</p>
+                <h2>Técnico Superior en Sistemas y Desarrollador Web Full Stack</h2>
                 <a href="#proyectos" class="cta-button">Ver Proyectos</a>
             </div>
         </section>
@@ -104,27 +104,40 @@
         <!-- Sección de Proyectos -->
         <section id="proyectos" class="section">
             <h2>Proyectos</h2>
-          
+        
             <div class="proyecto-item">
                 <h3>Tienda Online "Carnicería Charcutería Hnos. Galiano"</h3>
                 <img src="./imagenes/imagen1.png" alt="Carnicería Galiano" class="proyecto-imagen">
                 <p>Desarrollo de una tienda web completa para el negocio local "Carnicería Galiano", incluyendo tienda online, gestión de productos y pedidos.</p>
-                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p>
+                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p><br>
+            </div>
+
+            <div class="proyecto-item">
+                <h3>Gestor de Eventos para Instituto</h3>
+                <img src="./imagenes/imagen1.png" alt="Gestor de Eventos" class="proyecto-imagen">
+                <p>Aplicación web para la gestión de eventos en un instituto, como el Día de la Paz. Permite crear eventos y agregar actividades con horarios específicos.</p>
+                <p>Además, permite generar un PDF con el resumen de actividades y eventos planificados.</p>
+                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL, DOMPDF.</p>
             </div>
         </section>
 
+
         <section id="contacto" class="section">
             <h2>Contacto</h2>
-            <p class="contacto-info">Dirección: Calle Polígonos, 9. 23370 Orcera (Jaén)</p>
-            <p class="contacto-info">Teléfono: 620573098</p>
-            <p class="contacto-info">Email: t1s7lopezm@gmail.com</p>
             <form id="contactForm">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensaje" required></textarea>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+        
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        
     </main>
 
     <footer>

@@ -39,4 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('hidden');
         observer.observe(section);
     });
+
+    // 🚀 Agregar funcionalidad para enviar correo con EmailJS
+    (function() {
+        emailjs.init("uUrSD0vRCg0bfQ95X"); // Reemplaza con tu User ID de EmailJS
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        emailjs.send("service_hojw7tx", "template_k1cn6am", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        }).then(function(response) {
+            alert("¡Mensaje enviado con éxito!");
+            document.getElementById("contactForm").reset(); // Limpiar formulario
+        }, function(error) {
+            alert("Hubo un error, inténtalo de nuevo.");
+            console.log("Error:", error);
+        });
+    });
+
 });
+

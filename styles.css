@@ -153,7 +153,7 @@ nav {
     background: linear-gradient(135deg, #3498db, #8e44ad);
     color: #fff;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 0;
 }
 
@@ -469,11 +469,10 @@ footer {
 
 /* Estilos para la imagen del proyecto */
 .proyecto-imagen {
-    width: 100%; /* Ancho completo */
-    max-height: 200px; /* Altura máxima */
-    object-fit: cover; /* Ajusta la imagen al contenedor */
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
