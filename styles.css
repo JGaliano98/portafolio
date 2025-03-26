@@ -1,3 +1,21 @@
+/* Animación de entrada hacia abajo */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px); /* Empieza fuera de la pantalla */
+        opacity: 0; /* Empieza invisible */
+    }
+    100% {
+        transform: translateY(0); /* Se mueve a su posición original */
+        opacity: 1; /* Se hace visible */
+    }
+}
+
+/* Aplica la animación al título */
+.hero h1, .hero h2 {
+    animation: slideDown 1s ease-out; /* 1s de duración, con una aceleración suave */
+}
+
+
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,7 +38,7 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    color: #0a5019;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 250%;
@@ -58,7 +76,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #3498db;
+    color: #0a5019;
     text-decoration: none;
 }
 
@@ -150,7 +168,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3498db, #8e44ad);
+    /* background: linear-gradient(135deg, #3498db, #8e44ad); */
+    background-image: url(./imagenes/25336.jpg);
     color: #fff;
     text-align: center;
     padding: 1rem 1rem;
@@ -474,7 +493,5 @@ footer {
     display: block;
     margin: 0 auto;
 }
-
-
 
 }
