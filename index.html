@@ -11,7 +11,6 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">JL</a>
             <button class="nav-toggle" aria-label="Abrir navegación">
                 <span class="hamburger"></span>
                 <span class="close-icon"><i class="fas fa-times"></i></span>
@@ -32,16 +31,17 @@
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Jesús López Galiano</h1>
+                <img src="./imagenes/perfil.jpg" alt="Jesús López Galiano" class="foto-perfil">
                 <h2>Técnico Superior en Sistemas y Desarrollador Web Full Stack</h2>
                 <a href="#proyectos" class="cta-button">Ver Proyectos</a>
             </div>
+        </section>
+        
         </section>
 
         <section id="sobre-mi" class="section">
             <h2>Sobre mí</h2>
             <div class="sobre-mi-contenedor">
-                <!-- Imagen de perfil -->
-                <img src="./imagenes/perfil.jpg" alt="Jesús López Galiano" class="foto-perfil">
                 <!-- Párrafos -->
                 <div class="sobre-mi-texto">
                     <p>¡Hola! Soy Jesús López Galiano, acabo de terminar mi formación como desarrollador web en Jaén. Aunque soy recién graduado, tengo un año y dos meses de experiencia como Técnico en Sistemas de Telecomunicaciones e Informáticos, donde he adquirido conocimientos técnicos y habilidades prácticas que me han preparado para este nuevo camino en el desarrollo web.</p>
@@ -56,7 +56,7 @@
 
         <section id="experiencia" class="section">
             <h2>Experiencia Profesional</h2>
-            <div class="experiencia-item">
+            <div class="tarjeta">
                 <h3>Desarrollador Web Backend y Frontend - Prácticas</h3>
                 <p class="lugar">BRGI - Villacarrillo, Jaén (09/2024 - 12/2024)</p>
                 <ul>
@@ -65,7 +65,7 @@
                     <li>Trabajo en equipo con GitHub y Visual Studio Code.</li>
                 </ul>
             </div>
-            <div class="experiencia-item">
+            <div class="tarjeta">
                 <h3>Diseñador de infraestructuras de Fibra Óptica</h3>
                 <p class="lugar">Cotronic - INYGES 2016, Albolote, Granada (03/2019 - 05/2020)</p>
                 <ul>
@@ -78,11 +78,11 @@
 
         <section id="formacion" class="section">
             <h2>Formación Académica</h2>
-            <div class="experiencia-item">
+            <div class="tarjeta">
                 <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
                 <p>I.E.S. Las Fuentezuelas, Jaén (Finalizado en 2024)</p>
             </div>
-            <div class="experiencia-item">
+            <div class="tarjeta">
                 <h3>Técnico Superior en Sistemas de Telecomunicaciones e Informáticos</h3>
                 <p>I.E.S. Virgen de las Nieves, Granada (Finalizado en 2019)</p>
             </div>
@@ -90,36 +90,44 @@
 
         <section id="habilidades" class="section">
             <h2>Habilidades Técnicas</h2>
-            <div class="habilidades-lista">
-                <span>PHP</span>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>MySQL</span>
-                <span>Symfony</span>
-                <span>Git</span>
-                <span>Visual Studio Code</span>
+            <div class="habilidades-grid">
+                <div class="habilidad"><i class="fab fa-php"></i><span>PHP</span></div>
+                <div class="habilidad"><i class="fab fa-java"></i><span>Java</span></div>
+                <div class="habilidad"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="habilidad"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="habilidad"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="habilidad"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="habilidad"><i class="fab fa-linux"></i><span>Linux</span></div>
+                <div class="habilidad"><i class="fas fa-server"></i><span>Apache</span></div>
+                <div class="habilidad"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="habilidad"><i class="fas fa-code"></i><span>Symfony</span></div>
+                <div class="habilidad"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="habilidad"><i class="fas fa-code"></i><span>VS Code</span></div>
             </div>
         </section>
+        
+        
 
         <!-- Sección de Proyectos -->
         <section id="proyectos" class="section">
             <h2>Proyectos</h2>
-        
-            <div class="proyecto-item">
+
+            <div class="tarjeta">
                 <h3>Tienda Online "Carnicería Charcutería Hnos. Galiano"</h3>
                 <img src="./imagenes/imagen1.png" alt="Carnicería Galiano" class="proyecto-imagen">
                 <p>Desarrollo de una tienda web completa para el negocio local "Carnicería Galiano", incluyendo tienda online, gestión de productos y pedidos.</p>
-                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p><br>
+                <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p>
             </div>
 
-            <div class="proyecto-item">
+            <div class="tarjeta">
                 <h3>Gestor de Eventos para Instituto</h3>
-                <img src="./imagenes/imagen1.png" alt="Gestor de Eventos" class="proyecto-imagen">
+                <img src="./imagenes/eventos.jpg" alt="Gestor de Eventos" class="proyecto-imagen">
                 <p>Aplicación web para la gestión de eventos en un instituto, como el Día de la Paz. Permite crear eventos y agregar actividades con horarios específicos.</p>
                 <p>Además, permite generar un PDF con el resumen de actividades y eventos planificados.</p>
                 <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, PHP, MySQL, DOMPDF.</p>
             </div>
         </section>
+
 
 
         <section id="contacto" class="section">
